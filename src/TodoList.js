@@ -19,7 +19,7 @@ export function TodoList({
     <>
       <h2 className="is-size-4">Att göra:</h2>
       <ul className="block">
-        {todos.length === 0 && "All done!"}
+        {todos.length === 0 && "Grattis, du är klar med allt!"}
         {undone.map((todo) => {
           return (
             <TodoItem

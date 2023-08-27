@@ -47,14 +47,8 @@ export default function App() {
     });
   }
 
-  // function sortTodos() {
-  //   setTodos((currentTodos) => {
-  //     return [...currentTodos].sort((a, b) => a.completed - b.completed);
-  //   });
-  // }
-
   return (
-    <div className="has-text-white px-4">
+    <div className="has-text-white px-4 container is-max-desktop">
       <h1 className="is-size-1 has-text-centered mb-4">To-Do</h1>
       <NewTodoForm addTodo={addTodo} />
       <TodoList
