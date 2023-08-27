@@ -1,0 +1,71 @@
+body {
+  background-color: rgb(44, 113, 98);
+  min-height: 100vh;
+}
+
+.box.listitem {
+  padding: 0.6rem;
+  margin-bottom: 0.3rem;
+  transition: 1200ms transform ease-in-out;
+}
+.box.listitem div {
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.box.listitem p {
+  margin-left: 0.5rem;
+}
+
+h2 {
+  margin-bottom: 0.3rem;
+  display: inline-block;
+}
+h2 + button {
+  float: right;
+}
+
+h3 {
+  flex-grow: 1;
+  line-height: 100%;
+}
+
+input[type=checkbox] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.1em solid currentColor;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+}
+input[type=checkbox]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em rgb(12, 214, 53);
+  transform-origin: bottom left;
+  -webkit-clip-path: polygon(20% 35%, 39% 56%, 84% 18%, 100% 37%, 35% 92%, 0 53%);
+          clip-path: polygon(20% 35%, 39% 56%, 84% 18%, 100% 37%, 35% 92%, 0 53%);
+}
+input[type=checkbox]:checked::before {
+  transform: scale(1);
+}
+
+.done-list {
+  transition: all 1s ease-in-out;
+}
+.done-list li {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+.done-list h3 {
+  text-decoration: line-through;
+}/*# sourceMappingURL=styles.css.map */
